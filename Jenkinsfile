@@ -65,7 +65,7 @@ pipeline {
         failure {
             // Actions to be taken if the build fails
             script {
-                unstable('Rolling back due to deployment failure') {
+                unstable('Rolling back due to deployment  failure') {
                     build job: 'python'
                 }
             }
